@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.5.1" timestamp="2017-03-27T23:05:26.467">
+<file name="/Users/Alex/Documents/WSU/Senior Year/Spring/CS-348/sirtommy/src/main/java/sirtommy/Card.java">
+<violation beginline="91" endline="91" begincolumn="20" endcolumn="37" rule="OverrideBothEqualsAndHashcode" ruleset="Basic" package="edu.worcester.cs.kwurst.cs242" class="Card" method="equals" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/basic.html#OverrideBothEqualsAndHashcode" priority="3">
+Ensure you override both equals() and hashCode()
+</violation>
+</file>
+<file name="/Users/Alex/Documents/WSU/Senior Year/Spring/CS-348/sirtommy/src/main/java/sirtommy/SirTommy.java">
+<violation beginline="198" endline="198" begincolumn="14" endcolumn="36" rule="UselessParentheses" ruleset="Unnecessary" package="edu.worcester.cs.kwurst.cs242" class="SirTommy" method="checkForGameOver" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>

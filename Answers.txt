@@ -1,0 +1,49 @@
+Alex Bindas
+
+Install the Checkstyle Tool
+1. What Maven command did you use?
+mvn clean site
+
+2. Where does Maven put the report files?
+sirtommy/SirTommy/target and the html files are in the site folder
+
+3. How many errors were found?
+There were 179 errors were found
+
+4. Pick one error, look at the line of code marked for the error, and explain the error.
+There was an error on line 41 where it was missing a Javadoc comment.  That is a simple fix, just need to add the comment.
+
+5. If I wanted to start a religious war and change the number of spaces used for indentation to 5, how would I go about doing that?
+You would add a <module> attribute to the pom.xml file and set the value to 5.
+
+
+Install the FindBugs Tool
+1. What Maven command did you use?
+mvn clean compile site
+
+2. Where does Maven put the report files?
+sirtommy/SirTommy/target/site/ is where you can access the report html
+
+3. How many errors were found?
+0 errors, but 6 bugs were found
+
+4. Look at the error in the Card class, look at the line of code marked for the error, read the details link in the report, and explain the error.
+The error in the Card class on line 92 is categorized as “bad practice”.  Basically it is using an equals method that inherits the implementation of hashCode().  However, if there is going to be nothing inserted into a Hash map or table then it is saying you should set a default hash code to avoid problems.  
+
+
+Install the PMD Tool
+1. What Maven command did you use?
+mvn clean site
+
+2. Where does Maven put the report files?
+sirtommy/SirTommy/target
+
+3. How many errors were found?
+2 violations
+
+4. Look at the error in the Card class and look at the line of code marked for the error. Is this the same error as the one FindBugs found?
+It is the same error, but they are giving you different solutions on how to fix the problem.
+
+5. Look at the error in the SirTommy class and look at the line of code marked for the error. Would you have noticed this error if you were reviewing the code?
+I most likely would not have noticed this error.  When reading code parentheses are very minor and I wouldn’t think to look at something like that as a problem. 
+
